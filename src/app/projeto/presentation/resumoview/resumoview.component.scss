@@ -1,0 +1,19 @@
+@forward "../../../../scss/material/card.scss";
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    .item {
+        max-width: 40%;
+    }
+
+    
+}
+
+.header-image {
+    background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+    background-size: cover;
+}

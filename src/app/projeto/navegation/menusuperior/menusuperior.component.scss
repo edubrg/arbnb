@@ -1,0 +1,66 @@
+@use "../../../../scss/abstracts/color" as colors;
+
+svg {
+    fill: colors.$white;
+    cursor: pointer;
+}
+
+p,
+a {
+    color: colors.$white;
+}
+
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: colors.$black;
+    height: 80px;
+
+    nav {
+        display: flex;
+        a {
+            font-size: 1.2em;
+            + a {
+                margin-left: 20px;
+            }
+
+            hr {
+                width: 17px;
+                margin: 5px auto;
+            }
+            
+        }
+    }
+
+    div.user {
+        display: flex;
+        align-items: center;
+
+        p {
+            cursor: pointer;
+        }
+
+        > svg {
+            display: block;
+            height: 16px;
+            width: 16px;
+            margin: 0 20px 0 30px;
+        }
+
+        button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            padding: 5px 10px;
+            svg:last-child {
+                display: block;
+                height: 30px;
+                width: 30px;
+                fill: colors.$cinza;
+                margin-left: 10px;
+            }
+        }
+    }
+}
