@@ -26,5 +26,4 @@ export class ResumoviewComponent implements OnInit {
       }
     });
   }
-
 }
