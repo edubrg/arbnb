@@ -9,28 +9,22 @@ import { take } from 'rxjs';
   styleUrls: ['./resumoview.component.scss']
 })
 export class ResumoviewComponent implements OnInit {
-  dados!: ResumoDados[];
+  dados!: any;
 
   constructor(private resumoFacade: ResumofacadeService) { }
 
   ngOnInit(): void {
-    this.getResumo();
     console.log(this.dados);
+
+    this.getResumo();
   }
 
   getResumo(): void {
     this.resumoFacade.getResumo().pipe(take(1)).subscribe({
       next: (res) => {
-        console.log(res.consultas) 
-        
-      },
-      
-      error: (error: any) => {
-
-      },
-      complete: () => {
+        this.dados = res;
       }
-    })
+    });
   }
 
 }

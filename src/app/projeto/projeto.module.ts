@@ -6,6 +6,8 @@ import { ResumoviewComponent } from './presentation/resumoview/resumoview.compon
 import { ProjetoRoutingModule } from './projeto-routing.module';
 import { MatCardModule } from '@angular/material/card';
 
+
+
 @NgModule({
   declarations: [
     ConsultaviewComponent,

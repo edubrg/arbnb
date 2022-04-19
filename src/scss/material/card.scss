@@ -1,16 +1,16 @@
 mat-card {
-    padding: 0;
+	padding: 0;
 
-    mat-card-header {
-        background: #696969;
-        max-width: 100%;
-        padding: 16px;
-        border-radius: 4px 4px 0 0;
-        margin-bottom: 30px
-    }
+	mat-card-header {
+		background: #696969;
+		max-width: 100%;
+		padding: 16px;
+		border-radius: 4px 4px 0 0;
+		margin-bottom: 10px;
+	}
 
-    mat-card-content {
-        padding: 16px;
-    }
+	mat-card-content {
+		padding: 16px;
+		text-align: center;
+	}
 }
-
